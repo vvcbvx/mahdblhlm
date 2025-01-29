@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - iPhone 13 Pro Max (CSS Only)</title>
+  <link rel="stylesheet" href="./style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+
+                
+                
+                
+    <div id="il">
+      <h1 class="h121">صفحة الواتساب <hr> </h1>
+      
+    
+        <h1 id="iop1">WhatsApp</h1>
+        <h1 id="poi1">معهد       بالعلم  نرتقي </h1>
+    
+    
+         <img id="yr1" src="square-whatsapp-brands-sold.svg" alt="واتساب">
+         
+    </div>
+
+
+
+<section>
+  
+        <div class="outside-border">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            <div class="silencer"></div>
+            <div class="volume-up"></div>
+            <div class="volume-down"></div>
+            <div class="button-on"></div>
+            <div class="inside-border">
+              
+
+                <!-- Camera -->
+
+           
+                <!-- Lock -->
+
+                <div class="lock">
+                    <div class="lock-locked"></div>
+                </div>
+
+                <!-- Time -->
+
+                <div id="clock"  class="time"></div>
+
+                <!-- Battery and Signal -->
+
+                <div class="t-r-info">
+                    <div class="dots">...</div>
+                    <div class="battery">
+                        <div class="bar"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+
+                <!-- Date -->
+
+                <div id="date" class="date"></div>
+
+
+                <!-- Torch -->
+
+                <div class="torch-outter">
+                    <div class="light"></div>
+                    <div class="top"></div>
+                    <div class="switch-top"></div>
+                    <div class="switch-section"></div>
+                    <div class="switch">
+                        <div class="dot"></div>
+                    </div>
+                </div>
+              
+                <!-- Camera -->
+                
+
+                <div class="camera-outter">
+                    <div class="box"></div>
+                    <div class="eye"></div>
+                    <div class="circle"></div>
+                    <div class="dot"></div>
+                </div>
+                
+                
+                
+                
+                
+              
+                <!-- Bottom Line -->
+              
+              <div class="bottom-line"></div> 
+                                  
+                                       
+
+   
+   <div id="alko">
+  
+
+
+    
+    <div id="jkl">
+      
+    
+        <h1 id="iop">WhatsApp</h1>
+        <h1 id="poi">للتواصل مع
+        المعلميين</h1>
+    
+    
+         <img id="yr" src="square-whatsapp-brands-sold.svg" alt="واتساب">
+         
+    </div>
+    
+      <a href="https://wa.me/963982084145" target="_blank"> 
+    
+        <div id="abd">
+          <img src="whatsapp-brands-solid.svg" alt="whatsapp-brands-solid.svg" id="ok">
+            <h1 id="asm">المعلم: عبدالرزاق</h1>
+        </div>
+    </a> 
+    
+    
+        
+       <a href="https://wa.me/963967424107"  target="_blank">
+        <div id="abd">
+          <img  src="whatsapp-brands-solid.svg" alt="watsap" id="ok">
+             <h1 id="asm">الملعم: موفق</h1> 
+          
+            
+        </div>
+        
+        
+       </a>
+       
+       
+       <a href="https://wa.me/963930783676" target="_blank"> 
+        <div id="abd">
+            <img src="whatsapp-brands-solid.svg" id="ok"  alt="watsap">
+              <h1 id="asm">المعلم: عبدالقادر</h1>
+        </div>
+        
+       </a>
+          <a href="https//:wa.me/963995721403" target="_blank "> 
+        <div id="abd">
+            <img src="whatsapp-brands-solid.svg" id="ok"  alt="watsap">
+              <h1 id="asm">المعلم: احمد</h1>
+              
+        </div>
+        </a>
+                    
+       
+    </div>
+
+   
+
+            </div> 
+        </div>
+        
+    </section>
+    
+
+
+<script>
+var clockElement = document.getElementById("clock");
+var dateElement = document.getElementById("date");
+updateClock();
+
+function updateClock() {
+    var dateTimeNow = new Date();
+    var hours = dateTimeNow.getHours();
+    var minutes = dateTimeNow.getMinutes();
+    var seconds = dateTimeNow.getSeconds();
+
+    var day = dateTimeNow.getDate();
+    var month = dateTimeNow.getMonth() + 1;
+    var year = dateTimeNow.getFullYear();
+
+    hours = hours % 12 || 12;
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+    month = month < 10 ? '0' + month : month;
+
+    clockElement.innerHTML = hours + ':' + minutes + ':' + seconds;
+    dateElement.innerHTML = day + '/' + month + '/' + year;
+
+    setTimeout(updateClock, 1000); // تحديث الوقت كل ثانية
+}
+</script>
+
+  
+</body>
+</html>
